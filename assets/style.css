@@ -212,7 +212,7 @@ section {
 
 @media screen and (max-width: 992px) {
   section {
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .title {
@@ -244,7 +244,7 @@ section {
 
 .about button {
   display: block;
-  margin: 30px auto;
+  margin: 30px auto 10px auto;
   width: 60%;
   max-width: 200px;
   padding: 8px;
@@ -263,85 +263,130 @@ section {
 
 @media screen and (max-width: 650px) {
   .about img {
-display: block;
-width: 92%;
-height: 350px;
-object-fit: cover;
-box-shadow: none;
-
+    display: block;
+    width: 92%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: none;
+    margin: 15px auto;
   }
+
   .align-right {
     float: none;
-    margin: 15px auto;
   }
 }
 
 /* PORTFOLIO SECTION STYLE */
 
-#portfolio {
+.portfolio {
   background-color: peru;
 }
 
-/*.container {
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.container a {
-  display: flex;
-}*/
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  flex: 0 0 75%;
-}
-
-.item {
+.flex-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-grow: 2;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 1400px;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1100px;
 }
 
-.featured {
-  flex-basis: 100%;
-  position: relative;
-}
-
-.featured img {
-  width: 100%;
+.flex-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  width: calc(100% / 2 - 10px);
   height: 300px;
-  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid var(--black);
+  background-blend-mode: saturation;
 }
 
-.secondary {
-  position: relative;
-}
-
-.secondary img {
+.flex-item:first-child {
   width: 100%;
-  min-width: 300px;
-  height: 300px;
-  object-fit: cover;
+}
+
+#featured {
+  background-image: linear-gradient(black, black), url(./images/pexels-format-1029757.jpg);
+}
+
+#project-two {
+  background-image: linear-gradient(black, black), url(./images/pexels-mikechie-esparagoza-1742370.jpg);
+}
+
+#project-three {
+  background-image: linear-gradient(black, black), url(./images/pexels-pixabay-273230.jpg);
+}
+
+#project-four {
+  background-image: linear-gradient(black, black), url(./images/pexels-shamia-casiano-944773.jpg);
+}
+
+#project-five {
+  background-image: linear-gradient(black, black), url(./images/pexels-lee-campbell-115655.jpg);
+}
+
+
+/*IS THERE A BETTER WAY TO DO THIS?*/
+.flex-item:hover {
+  background-blend-mode: normal;
+}
+
+#featured:hover {
+  background-image: url(./images/pexels-format-1029757.jpg);
+}
+
+#project-two:hover {
+  background-image: url(./images/pexels-mikechie-esparagoza-1742370.jpg);
+}
+
+#project-three:hover {
+  background-image: url(./images/pexels-pixabay-273230.jpg);
+}
+
+#project-four:hover {
+  background-image: url(./images/pexels-shamia-casiano-944773.jpg);
+}
+
+#project-five:hover {
+  background-image: url(./images/pexels-lee-campbell-115655.jpg);
 }
 
 .label {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: var(--offwhite);
+  background-color: rgba(248, 249, 249, .7);
+  padding: 10px;
 }
 
-@media screen and (min-width: 800px) {
-  .secondary {
-    flex: 5;
+@media screen and (max-width: 650px) {
+  .flex-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #featured {
+    background-image: url(./images/pexels-format-1029757.jpg);
+  }
+  
+  #project-two {
+    background-image: url(./images/pexels-mikechie-esparagoza-1742370.jpg);
+  }
+  
+  #project-three {
+    background-image: url(./images/pexels-pixabay-273230.jpg);
+  }
+  
+  #project-four {
+    background-image: url(./images/pexels-shamia-casiano-944773.jpg);
+  }
+  
+  #project-five {
+    background-image: url(./images/pexels-lee-campbell-115655.jpg);
   }
 }
 
@@ -350,19 +395,3 @@ box-shadow: none;
 #contact {
   background-color: lightskyblue;
 }
-
-/*main {
-  display: grid;
-  grid-auto-columns: minmax(0, 1fr);
-grid-auto-flow: column;
-}*/
-
-/*
-#featured {
-  background-image: url(./images/pexels-cottonbro-studio-5082568.jpg);
-}
-
-#project-two {
-  background-image: url(./images/pexels-fabricio-trujillo-60626.jpg);
-}
-*/
