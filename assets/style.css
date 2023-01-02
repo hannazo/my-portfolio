@@ -25,7 +25,8 @@ body {
   line-height: 1.5;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -53,15 +54,6 @@ header {
   background-color: var(--offwhite);
 }
 
-@media (max-width: 650px) {
-  header {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 17px 40px;
-  }
-}
-
 h1 {
   font-size: 1.5em;
   border: 2px solid black;
@@ -73,9 +65,8 @@ nav {
 }
 
 nav a {
- font-size: 1.2em;
+  font-size: 1.2em;
 }
-
 
 nav>ul {
   width: 35vw;
@@ -94,7 +85,14 @@ nav>ul>li:hover {
   background-color: var(--dark-grey);
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 17px 40px;
+  }
+
   nav {
     margin-top: 17px;
     width: 100%;
@@ -112,7 +110,7 @@ nav>ul>li:hover {
 .hero {
   display: flex;
   background-image: url(./images/pexels-adrien-olichon-2931290.jpg);
-  height: 400px;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,19 +123,19 @@ nav>ul>li:hover {
   text-align: center;
   color: white;
   background-color: rgba(68, 68, 68, .7);
-  padding: 2rem;
+  padding: 2em;
 }
 
 .hero-text h2 {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .hero-text p {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: 'Bodoni Moda', serif;
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .hero {
     margin-top: 130px;
     width: 100%;
@@ -146,6 +144,7 @@ nav>ul>li:hover {
     align-items: center;
     text-align: center;
     padding: 0 50px;
+    height: 350px;
   }
 }
 
@@ -184,11 +183,17 @@ nav>ul>li:hover {
 
 /* COMMON ELEMENTS STYLING */
 
+main {
+  width: 90%;
+  margin: auto;
+}
+
 section {
   display: flex;
-  flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
+  margin: 30px 0;
+  font-size: 1em;
 }
 
 .title {
@@ -196,8 +201,8 @@ section {
   font-family: 'Bodoni Moda', serif;
   font-size: 1.75em;
   text-align: right;
-  line-height: 1.1;
-  padding-right: 15px;
+  line-height: 1.5;
+  padding-right: 20px;
   background-color: aquamarine;
   min-height: 100%;
   min-width: 25%;
@@ -205,18 +210,70 @@ section {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 992px) {
+  section {
+   flex-direction: column;
+  }
+
+  .title {
+    border-right: none;
+    border-bottom: 3px solid var(--black);
+    text-align: left;
+    min-width: 100%;
+    padding-left: 20px;
+  }
+}
+
 
 /* ABOUT SECTION STYLE */
 
-#about {}
-
-#about img {
-  height: 300px;
+.about img {
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 7px 7px var(--light-grey);
 }
 
 .align-right {
   float: right;
-  margin-left: 10px;
+  margin: 15px 20px;
+}
+
+.about p {
+  padding: 10px 20px;
+}
+
+.about button {
+  display: block;
+  margin: 30px auto;
+  width: 60%;
+  max-width: 200px;
+  padding: 8px;
+  font-size: 1.25em;
+  font-family: 'Bodoni Moda', serif;
+  background-color: var(--light-grey);
+  border: 2px solid var(--black);
+  border-radius: 15px;
+}
+
+.about button:hover {
+  background-color: var(--dark-grey);
+  color: white;
+  border: 2px solid var(--dark-grey);
+}
+
+@media screen and (max-width: 650px) {
+  .about img {
+display: block;
+width: 92%;
+height: 350px;
+object-fit: cover;
+box-shadow: none;
+
+  }
+  .align-right {
+    float: none;
+    margin: 15px auto;
+  }
 }
 
 /* PORTFOLIO SECTION STYLE */
