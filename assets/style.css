@@ -402,6 +402,7 @@ section {
   justify-content: center;
   margin: 0 auto;
   padding: 20px;
+  padding-bottom: 0;
 }
 
 .grid {
@@ -476,4 +477,20 @@ padding-bottom: 3px;
     display: flex;
     flex-direction: column;
   }
+}
+
+/* FOOTER SECTION STYLE */
+footer {
+ margin-top: 20px;
+ background-color: silver;
+ padding: 20px;
+ text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  font-size: 1.2em;
+  margin: 0 auto;
 }
