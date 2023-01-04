@@ -7,7 +7,7 @@ This is a [portfolio](https://hannazo.github.io/my-portfolio/) page that showcas
 It was built with html and advanced css.  
 
 Appearance:
-It is not exactly like the mock-up provided. I chose a simple minimalistic design with muted tones that represents my style best and added/changed elements to create a portfolio page that I wanted. 
+It is not exactly like the mock-up provided. I chose a simple minimalistic design with muted tones that represents my style best and added/changed elements to create a portfolio page that I envisioned. 
 
 Functionality:
 - Fixed navigation bar with developer's name on the left and navigation links on the right
