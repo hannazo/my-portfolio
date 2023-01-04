@@ -21,7 +21,7 @@ Functionality:
 - Footer with links to social media accounts and copyright text
 - Responsive design that adapts to various screen sizes
 
-* Please note that placeholder text, images and sample portfolio were used and will be updated later as I go through the course
+** Please note that placeholder text, images and sample portfolio were used and will be updated later as I go through the course
 
 ## Installation
 
@@ -42,8 +42,6 @@ Footer section: click on social media icons to be taken to my accounts
 In addition, you can inspect the page to see source code. My portfolio incorporates various elements, such as flexbox, CSS grid, forms, buttons, semantic html, pseudo-classes and more. Media queries and flexbox were used to create a responsive web design. Change screen size to see how design adapts to different viewports.
 
 ![Screenshot of view on Nest Hub Max](./assets/images/Screenshot%20-%20Nest%20Hub%20Max.png)
-
-![Screenshot of view on iPhone XR](./assets/images/Screenshot%20-%20iPhone%20XR.png)
 
 ## License
 
