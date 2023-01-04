@@ -126,29 +126,31 @@
                 <div class="title">
                     <h2>BE IN TOUCH</h2>
                 </div>
-                <div class="contact-info">
-                    <div>
-                        <p>Phone number</p>
-                        <p>Email</p>
-                        <p>Address</p>
-                    </div>
+                <div class="grid-wrapper">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <p>Tel: (416) 123-4567</p>
+                            <p>Email: info@email.com</p>
+                            <p>123 Name St, Unit 45
+                                <br>
+                                Toronto, ON A1B 2C3
+                            </p>
+                        </div>
 
                     <!--CONTACT FORM-->
-                    <div>
-                        <form>
-                            <div>
-                                <label>Name:</label>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label>Email:</label>
-                                <input type="email">
-                            </div>
-                            <div>
-                                <label>Enter your message:</label>
-                                <textarea rows="5" cols="15" placeholder="Message"></textarea>
-                            </div>
-                        </form>
+                   <form class="contact-form" method="post" action="https://x">
+                        <div class="grid-item">
+                            <label for="client-name">Name:</label>
+                            <input type="text" name="client-name" id="client-name">
+                            <label for="client-email">Email:</label>
+                            <input type="email" name="client-email" id="client-email">
+                        </div>
+                        <div class="grid-item">
+                            <label for="message">Enter your message:</label>
+                            <textarea id="message" name="message" rows="5" cols="20" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
                     </div>
                 </div>
             </section>
