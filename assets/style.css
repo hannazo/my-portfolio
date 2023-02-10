@@ -286,7 +286,7 @@ section {
 }
 
 #featured {
-  background-image: linear-gradient(black, black), url(./images/pexels-format-1029757.jpg);
+  background-image: linear-gradient(black, black), url(./images/feed-the-foodie.jpg);
 }
 
 #project-two {
@@ -312,7 +312,7 @@ section {
 }
 
 #featured:hover {
-  background-image: url(./images/pexels-format-1029757.jpg);
+  background-image: url(./images/feed-the-foodie.jpg);
 }
 
 #project-two:hover {
