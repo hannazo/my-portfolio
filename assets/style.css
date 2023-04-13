@@ -290,7 +290,7 @@ section {
 }
 
 #project-two {
-  background-image: linear-gradient(black, black), url(./images/pexels-mikechie-esparagoza-1742370.jpg);
+  background-image: linear-gradient(black, black), url(./images/cameraShare_logo.png);
 }
 
 #project-three {
@@ -316,7 +316,7 @@ section {
 }
 
 #project-two:hover {
-  background-image: url(./images/pexels-mikechie-esparagoza-1742370.jpg);
+  background-image: url(./images/cameraShare_logo.png);
 }
 
 #project-three:hover {
